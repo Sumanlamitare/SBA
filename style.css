@@ -1,0 +1,374 @@
+/* Home page stylinng */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  background-color: black;
+}
+.mainContainer {
+  background-image: url("https://e0.pxfuel.com/wallpapers/329/765/desktop-wallpaper-web-design-dark-developer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  /* border: solid green; */
+  height: 100%;
+  /* margin-top: 2em; */
+}
+
+.quote {
+  height: 120px;
+  width: 150px;
+  color: gold;
+  padding: 15px;
+  text-align: center;
+  font-family: cursive;
+  font-size: 12px;
+  /* border: solid red; */
+}
+
+.navBar {
+  /* border: solid blue; */
+  /* margin: 1em; */
+  height: auto;
+  background-color: navy;
+}
+
+.logo {
+  border: solid red;
+  /* background-image: url("/Pictures/myLogo.jpg"); */
+  width: 60px;
+  height: 60px;
+  border: 1px solid;
+  border-radius: 50%;
+  object-fit: contain;
+}
+.logo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.navBar {
+  font-family: fantasy;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 18px;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 15px;
+}
+
+.nav li {
+  display: inline;
+}
+
+.nav a {
+  margin-right: 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.nav a:hover {
+  color: orange;
+  text-decoration: underline overline;
+  transition: color 0.5s ease-in;
+}
+
+.welcomeMsg {
+  text-align: center;
+  /* border: solid white; */
+  width: 450px;
+  justify-self: center;
+}
+.welcomeMsg h1 {
+  white-space: nowrap;
+  /* border-right: 0.1em solid white; */
+  overflow: hidden;
+  margin: 0 auto;
+  letter-spacing: 0;
+  animation: typing 3s steps(50, start) infinite;
+  color: wheat;
+  text-decoration: solid green underline overline;
+}
+.welcomeMessage {
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: white;
+}
+.icons {
+  /* border: solid red; */
+  height: auto;
+  width: 440px;
+  display: flex;
+  justify-self: center;
+  justify-content: space-between;
+}
+.icon {
+  /* border: solid grey; */
+  width: 50px;
+  height: 50px;
+  display: flex;
+  /* border-radius: 50%; */
+  object-fit: cover;
+}
+.icon img {
+  width: 50px;
+  height: 50px;
+}
+.icon:hover {
+  transform: scale(1.5);
+}
+
+/* about page css */
+
+#about-main {
+  background-image: url("https://images.unsplash.com/photo-1585314062340-f1a5a7c9328d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTgxfHxhYm91dCUyMG1lJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D");
+  /* border: solid red; */
+  display: inline-block;
+  min-height: 100%;
+  height: auto;
+  /* margin-top: 0; */
+}
+.hobbies {
+  /* border: solid yellow; */
+  /* width: auto; */
+  height: 100%;
+  text-align: center;
+  color: white;
+  /* display: flex; */
+  /* margin: 3em; */
+  margin-bottom: 1em;
+}
+.heading {
+  text-decoration: underline overline burlywood;
+}
+.skills {
+  /* border: solid white; */
+
+  color: white;
+}
+.skills table {
+  margin-left: 15em;
+  margin-top: 1em;
+}
+.skills h1 {
+  text-decoration: underline overline red;
+  text-align: center;
+}
+.aboutMe {
+  color: white;
+  /* border: solid burlywood; */
+  /* width: 33%; */
+}
+.aboutMe h1 {
+  text-align: center;
+  text-decoration: underline overline green;
+}
+
+.card-music {
+  background-image: url("https://media0.giphy.com/media/XGbfacwWVO9J34OSBL/giphy.gif?cid=6c09b952t20cad297lcb7gvj5tlxort6d0cspebusibkkk1t&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 3em;
+  text-align: center;
+  height: 300px;
+  width: 500px;
+  justify-self: center;
+}
+.card-music li {
+  text-align: left;
+  color: palegreen;
+  font-size: 20px;
+  font-family: cursive;
+  /* justify-self: center; */
+  /* margin-left: em; */
+}
+
+.card-game {
+  background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20240528/pngtree-background-of-monitor-computer-with-online-game-streaming-desktop-image_15734081.jpg");
+  height: 300px;
+  width: 500px;
+  background-size: cover;
+  /* background-position: 15%; */
+  background-repeat: no-repeat;
+  margin: 3em;
+  justify-self: center;
+  text-decoration: underline;
+
+  /* color: red; */
+}
+.card-game li {
+  text-align: left;
+  color: white;
+  font-family: fantasy;
+  font-size: 20px;
+}
+.card-game h5 {
+  color: white;
+}
+.card-activities {
+  background-image: url("https://t4.ftcdn.net/jpg/01/43/12/83/360_F_143128369_kSeRfYGA8qae1eDMmNAnRLPso3pUiS8J.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 3em;
+  height: 300px;
+  width: 500px;
+  color: black;
+  justify-self: center;
+}
+.card-activities li {
+  color: black;
+  filter: brightness(1.5);
+  text-align: left;
+}
+table,
+td {
+  border: 3px double green;
+  text-align: center;
+}
+th {
+  border: 3px double red;
+  color: brown;
+}
+table {
+  margin: auto 0;
+}
+hr {
+  color: aqua;
+}
+
+/* *************************************************************************************************** */
+/* Contact css */
+#contact-body {
+  background-color: grey;
+}
+#contact-main {
+  background-image: url("https://images.unsplash.com/uploads/1413222992504f1b734a6/1928e537?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  /* border: solid white; */
+  min-height: 100%;
+  display: flex;
+  background-size: cover;
+  height: auto;
+  margin-top: 0;
+  justify-content: space-between;
+}
+.contactForm {
+  /* border: solid black; */
+  height: auto;
+  width: 800px;
+  margin-right: 1em;
+  padding: 20px;
+  height: 380px;
+  background-color: whitesmoke;
+  justify-self: center;
+  margin-top: 3em;
+}
+.contact h1 {
+  text-align: center;
+  text-decoration: solid underline overline green;
+}
+
+label {
+  font-size: 25px;
+  color: black;
+  font-weight: bold;
+}
+.review {
+  /* margin-top: 4em; */
+  margin-bottom: 1em;
+}
+
+.review h1 {
+  text-align: center;
+  text-decoration: solid green underline overline;
+  color: yellow;
+}
+
+.reviewForm {
+  /* border: solid blue; */
+  height: auto;
+  /* width: auto; */
+  margin: 3em;
+  justify-self: center;
+  width: 800px;
+  /* height: auto; */
+  background-color: white;
+  /* margin-top: 3em; */
+}
+
+.review h1 {
+  text-align: center;
+  /* width: 800px;
+  width: 380px; */
+}
+.formSections {
+  margin-bottom: 15px;
+  height: 100%;
+  margin-top: 1em;
+  padding: 10px;
+}
+#fullName,
+#Remail,
+#yourReview {
+  border: solid black;
+  display: inline-block;
+  width: 100%;
+  padding: 8px;
+  /* display: inline-block; */
+  box-sizing: border-box;
+}
+
+select {
+  margin-left: 1em;
+  width: 25%;
+  height: 30px;
+}
+
+#complete-btn {
+  height: 40px;
+  margin-top: 1em;
+  background-color: white;
+  border-radius: 4px;
+  font-size: 15px;
+  width: 100px;
+  margin-left: 40%;
+  /* margin-bottom: em; */
+  padding: 5px;
+}
+#complete-btn:hover {
+  background-color: green;
+  color: blue;
+}
+#fName,
+#lName,
+#email,
+#msg {
+  border: solid black;
+  display: inline-block;
+  width: 100%;
+  padding: 8px;
+  /* display: inline-block; */
+  box-sizing: border-box;
+}
+#submit-btn {
+  height: 40px;
+  margin-top: 1em;
+  background-color: white;
+  border-radius: 4px;
+  font-size: 15px;
+}
+#submit-btn:hover {
+  background-color: green;
+  color: white;
+}
